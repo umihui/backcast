@@ -1,5 +1,11 @@
 var VideoListView = Backbone.View.extend({
 
+  el: '.list',
+
+  initialize: function() {
+    this.render();
+  },
+
 
   render: function() {
     this.$el.children().detach();
@@ -10,3 +16,5 @@ var VideoListView = Backbone.View.extend({
   template: templateURL('src/templates/videoList.html')
 
 });
+
+//AppView.onRender(VideoListView.render);
